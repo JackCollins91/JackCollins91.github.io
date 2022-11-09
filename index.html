@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .rounded-borders {
+      height: 130px;
+      width: 100px;
+      border-color: #666 #8ebf42;
+      border-image: none;
+      border-radius: 50px 0 50px 0;
+      border-style: solid;
+      border-width: 20px;
+    }
+body {
+font-family: "Lucida", monospace;
+}
+
+ul#menu li {
+display:inline;
+}
+
+.sidenav {
+height: 100%;
+width: 190px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px;
+}
+
+.sidenav a {
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.main {
+margin-left: 190px; /* Same as the width of the sidenav */
+font-size: 20px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+
+.thumbnail{
+height: 40px;
+width: 40px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+footer {
+text-align: center;
+padding: 3px;
+background-color: black;
+color: white;
+}
+
+.button {
+background-color: black; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+.card {
+background-color: black;
+color: #818181;
+padding: 20px;
+margin-top: 20px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+width:'40%';
+}
+.card:hover {
+color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <div class="rounded-borders">
+        <img 
+        src="profile_pic.JPG" 
+        alt="Jack's profile photo" 
+        width="100px" 
+        height = "132px" 
+        align="middle">
+        
+    </div>
+    
+  <a href="#home">Bio</a>
+  <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=Q0JV7swAAAAJ&gmla=AJsN-F4TWWu6VqFm4lhIP3fNQE0UUJaF3RLPVKXDDuULAbHgnsYwTFuJimn2bslFYRk15HWYcdcOAUb0t7yjktBExBS4pX9gjy8nwtW-wAzXhS8DrZQ0zW9DA6cdEdqdmJJjgpihqY2O5jeDqvne4OBqm3jHO7F9RA">
+    Publications
+  </a>
+  <a href="cv.pdf">
+    CV
+  </a>
+   <ul>
+    <li><a href='mailto:johnjackcollins91@gmail.com'><img  class= 'thumbnail' src="email_black.png" alt="Email"> </a></li>
+    <li> <a href="https://github.com/JackCollins91"><img class= 'thumbnail' src="github_black.png" alt="Github"> </a></li>
+    <li> <a href = 'https://www.linkedin.com/in/jack-collins-595a53115/'> <img  class= 'thumbnail' src="linkedin_black.png" alt="LinkedIn"> </a></li>
+  </ul>
+</div>
+
+
+<div class="main">
+  <h1>Bio</h1>
+  <p>
+    John ‘Jack’ Collins is a PhD Student in Sociology at the Graduate School of Economic and Social Sciences. 
+    He holds a Bachelor’s of Sociology with Honours from the Australian National University. 
+    Jack has a Master’s degree in Data Science from James Cook University. 
+  </p>
+    <p>
+    His Master’s project was regarding predictive modelling for student attrition from sub-tertiary courses in 
+    Australia. During his Master’s studies, he also assisted in research projects regarding social attitudes 
+    and voting behavior in Australia. Before starting PhD, Jack was a Senior IT Consultant specializing in 
+    data engineering, analytics and software development. 
+  </p>
+    <p>
+    Jack is interested in applying Data Science and IT to sociological research, 
+    particularly with regard to machine learning, analytics, and web applications.
+  </p>
+  <h2>
+  Afilliations
+  </h2>
+  <li>University of Mannheim, PhD Candidate</li>
+  <h2>
+    Research Interests
+  </h2>
+  <li>Quantitative methods in Social Science</li>
+  <li>Machine learning, AI and statistics</li>
+  <li>Software development applications to Social Science research</li>
+
+  <h2>
+    Skills
+  </h2>
+  <li>Software Development: Java, C#, Python, SQL, R, HTML, Javascript</li>
+  <li>Research Skills: Quantitative methods, especially Machine Learning</li>
+  <li>Platform Expertise: Salesforce, MS Azure, AWS, Google Cloud, Apache Spark, SAP, SAS, Unity</li>
+
+<div>
+  <h2>Projects </h2>
+
+    <div class = row padding = 3px>
+      <div class="card">
+          <h2>Prediction-based Adaptive Designs for Panel Surveys</h2>
+          <div>
+          <a href = 'https://www.sowi.uni-mannheim.de/keusch/research/#c302659'>
+            <img  class= 'thumbnail' src="link_white.png" alt="Link here">
+          </a>
+          </div>
+      </div>
+    </div>
+
+    <div class = row padding = 3px>
+      <div class="card">
+          <h2>Web Scraping News Websites for NLP</h2>
+          <h5>A google colab notebook</h5>
+          <div>
+          <a href = 'https://colab.research.google.com/drive/1vw8OYDRqCOHorP520qvLsrsSDGacqnKs#scrollTo=o-nEWxgR5o9M'>
+            <img  class= 'thumbnail' src="link_white.png" alt="Link here">
+          </a>
+          </div>
+      </div>
+    </div>
+
+    <div class = row padding = 3px>
+      <div class="card">
+          <h2>NLP Analysis - Correlating Sentiment with Topic</h2>
+          <h5>A google colab notebook</h5>
+          <div>
+          <a href = 'https://colab.research.google.com/drive/1kgb5vm7JYlsi3A9QqSRenGC83BTBbsMG#scrollTo=TjAxP1u1vxXZ'>
+            <img  class= 'thumbnail' src="link_white.png" alt="Link here">
+          </a>
+          </div>
+      </div>
+    
+      <div class = row padding = 3px>
+        <div class="card">
+            <h2>Wordle Sim</h2>
+            <h5>Brute force approach to finding the best starting word</h5>
+            <div>
+            <a href = 'https://colab.research.google.com/drive/1VWKyi6fCQg6sHvsKDfqu3-IEVenyQdtk'>
+              <img  class= 'thumbnail' src="link_white.png" alt="Link here">
+            </a>
+            </div>
+        </div>
+
+        <div class = row padding = 3px>
+          <div class="card">
+              <h2>Finding synergies with network analysis</h2>
+              <h5>Using Neo4J to identify the best Pokémon teams</h5>
+              <div>
+              <a href = 'https://towardsdatascience.com/finding-synergies-with-network-analysis-using-neo4j-to-identify-the-best-pok%C3%A9mon-teams-4ff89e791671'>
+                  <img  class= 'thumbnail' src="link_white.png" alt="Link here">
+              </a>
+              </div>
+          </div>
+
+          <div class = row padding = 3px>
+            <div class="card">
+                <h2>Make you own federal election forecasting model</h2>
+                <h5>Using polling data to simulate and predict elections in R</h5>
+                <div>
+                <a href = 'https://jackcollins1991.github.io/Portfolio/28122020'>
+                  <img  class= 'thumbnail' src="link_white.png" alt="Link here">
+                </a>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+
+
+<div padding = '3px'>  &nbsp; </div>
+<footer>
+  
+  <p>email: johnjackcollins91@gmail.com</p>
+</footer>
+</body>
+</html> 

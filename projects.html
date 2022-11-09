@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .rounded-borders {
+        height: 130px;
+        width: 100px;
+        border-color: #666 #8ebf42;
+        border-image: none;
+        border-radius: 50px 0 50px 0;
+        border-style: solid;
+        border-width: 20px;
+      }
+body {
+  font-family: "Lucida", monospace;
+}
+
+ul#menu li {
+  display:inline;
+}
+
+.sidenav {
+  height: 100%;
+  width: 190px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 190px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.thumbnail{
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+.button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<body>
+    <div class = row>
+        <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div>
+            <a href = 'https://www.linkedin.com/in/jack-collins-595a53115/'>
+                <img  class= 'thumbnail' src="linkedin_black.png" alt="LinkedIn">
+            </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
